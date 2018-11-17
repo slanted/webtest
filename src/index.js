@@ -66,9 +66,15 @@ function displayEntries (contentTypes) {
 
       // Display a table with Entry information
       const table = new Table({
-        head: ['Id', 'Title', 'Description']
+        head: ['Id', 'Title', 'description']
       })
       entries.forEach((entry) => {
+          var title = document.getElementById("productTitle");
+          var description = document.getElementById("productDescription");
+          var image = document.getElementById("productDescription");
+          title.innerHTML = entry[0].fields.title;
+          description.innerHTML = entry[0].fields.description;
+
         table.push([entry.sys.id, entry.fields[contentType.displayField] || '[empty]'])
       })
       console.log(table.toString())
