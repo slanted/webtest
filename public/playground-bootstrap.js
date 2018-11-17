@@ -1,4 +1,3 @@
-/ If the browser natively handles custom elements include the adapter
 if (window.customElements) document.write('<script type="text/javascript" src="../custom-elements-es5-adapter.js"></script>');
 
 // Bring in the bundles, stylesheets and meta data
