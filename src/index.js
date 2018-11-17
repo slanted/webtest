@@ -74,6 +74,7 @@ function displayEntries (contentTypes) {
           var image = document.getElementById("productDescription");
           title.innerHTML = entry.fields.title;
           description.innerHTML = entry.fields.description.content[0].content[0].value;
+          image.src = entry.fields.image.fields.file.url;
 
         table.push([entry.sys.id, entry.fields[contentType.displayField] || '[empty]'])
       })
