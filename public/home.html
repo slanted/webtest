@@ -1,1 +1,35 @@
-this is the homepage
+
+<!doctype html>
+<html lang="en">
+<head>
+    <script>if (!window.customElements) { document.write('<!--'); }</script>
+    <script type="text/javascript" src="https://developers.nuskin.com/custom-elements-es5-adapter.js"></script>
+    <!--! do not remove -->
+    
+    <title>Dev Portal Playground Homepages</title>
+    
+    <style>
+        html, body {
+            overscroll-behavior: none;
+            /* TODO: why is this not working in common-transition-styles? */
+            margin: 0;
+        }
+    </style>
+</head>
+<body unresolved>
+<script src="https://developers.nuskin.com/playground-bootstrap.js"></script>
+<!-- <h3 style="position:fixed; z-index:2000; background-color: white;">h3 outside of polymer!</h3> -->
+<ns-header>
+        <ns-profile id="ns-profile" slot="right-one">
+            <div id="newCustomer" slot="newCustomer">
+                    New customer? <a href="/playground/signup.html">Sign up today!</a>
+            </div>
+        </ns-profile>
+</ns-header>
+<br/>
+<ns-popular-products></ns-popular-products>
+<ns-brand-story></ns-brand-story>
+<br/>
+<ns-footer></ns-footer>
+</body>
+</html>
