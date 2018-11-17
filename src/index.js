@@ -66,7 +66,7 @@ function displayEntries (contentTypes) {
 
       // Display a table with Entry information
       const table = new Table({
-        head: ['Id', 'Title']
+        head: ['Id', 'Title', 'Description']
       })
       entries.forEach((entry) => {
         table.push([entry.sys.id, entry.fields[contentType.displayField] || '[empty]'])
