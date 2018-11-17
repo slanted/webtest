@@ -72,8 +72,8 @@ function displayEntries (contentTypes) {
           var title = document.getElementById("productTitle");
           var description = document.getElementById("productDescription");
           var image = document.getElementById("productDescription");
-          title.innerHTML = entry[0].fields.title;
-          description.innerHTML = entry[0].fields.description;
+          title.innerHTML = entry.fields.title;
+          description.innerHTML = entry.fields.description;
 
         table.push([entry.sys.id, entry.fields[contentType.displayField] || '[empty]'])
       })
